@@ -4,28 +4,26 @@
   http://maven.apache.org/maven-v4_0_0.xsd"> 
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.sprint3r.jenkins</groupId>
-  <artifactId>fizzBuzzJenkins</artifactId> 
+  <artifactId>fizzBuzzJenkins</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version> 
+  <version>1.0-SNAPSHOT</version>
   <name>FizzBuzz Jenkins Maven Webapp</name>
-  <url>http://maven.apache.org</url> 
-  <dependencies> 
+  <url>http://maven.apache.org</url>
+  <dependencies>
     <dependency>
-      <groupId>junit</groupId> 
+      <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version> 
-      <scope>test</scope> 
-    </dependency> 
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
-
-  <build> 
-    <finalName>fizzBuzzJenkins</finalName> 
+  <build>
+    <finalName>fizzBuzzJenkins</finalName>
   </build>
-
-  <plugins> 
-    <plugin> 
+  <plugins>
+    <plugin>
       <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-dependency-plugin</artifactId> 
+      <artifactId>maven-dependency-plugin</artifactId>
       <version>2.3</version>
       <executions>
         <execution>
@@ -40,12 +38,11 @@
                 <artifactId>webapp-runner</artifactId>
                 <version>7.0.40.0</version>
                 <destFileName>webapp-runner.jar</destFileName>
-              </artifactItem> 
-            </artifactItems> 
-          </configuration> 
-        </execution> 
+              </artifactItem>
+            </artifactItems>
+          </configuration>
+        </execution>
       </executions>
-    </plugin> 
-  </plugins> 
-
+    </plugin>
+  </plugins>
 </project>
